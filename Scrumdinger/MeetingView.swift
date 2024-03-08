@@ -15,7 +15,6 @@ struct MeetingView: View {
             HStack {
                 VStack(alignment: .leading) {
                     Text("Seconds Elapsed")
-                    Text("Test Branch")
                         .font(.caption)
                     Label("300", systemImage: "hourglass.tophalf.fill")
                 }
