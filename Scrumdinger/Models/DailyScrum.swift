@@ -14,7 +14,7 @@ struct DailyScrum {
     var theme: Theme
 }
 
-extension DailyScrum {
+extension DailyScrum { //dummy data
     static let sampleData: [DailyScrum] =
     [
         DailyScrum(title: "Design", attendees: ["Ariel", "Martin", "Simon", "Marta"], lengthInMinutes: 10, theme: .yellow),
