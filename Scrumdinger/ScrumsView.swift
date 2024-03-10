@@ -10,7 +10,7 @@ import SwiftUI
 struct ScrumsView: View {
     let scrums: [DailyScrum]
     var body: some View {
-        List(scrums, id: \.title) { scrum in
+        List(scrums) { scrum in //this list needs to return a view
             CardView(scrum:scrum)
                 .listRowBackground(scrum.theme.mainColor)
         }
