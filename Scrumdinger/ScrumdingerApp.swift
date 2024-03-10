@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct ScrumdingerApp: App {
     var body: some Scene {
-        WindowGroup {
-            MeetingView()
+        WindowGroup { //fills the entire device's screen
+            ScrumsView(scrums: DailyScrum.sampleData) //to set this view as the app's root one
         }
     }
 }
