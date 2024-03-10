@@ -35,6 +35,9 @@ enum Theme: String {
     var mainColor: Color {
         Color(rawValue) //initializes a color from the asset catalog
     }
+    var name: String {
+        rawValue.capitalized //to capitalize the names of the diff colors defined in Theme above, to show them in a view as a list
+    }
 }
 
 
