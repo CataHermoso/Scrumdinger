@@ -18,12 +18,12 @@ struct CardView: View {
                 Label("\(scrum.attendees.count)", systemImage: "person.3")
                 Spacer()
                 Label("\(scrum.lengthInMinutes)", systemImage: "clock")
-                    .padding(.trailing, 20)
+                    .labelStyle(.trailingIcon) //defined in TrailingIconStyle file
             }
             .font(.caption)
         }
         .padding() //to bring the content in from the edges
-        .foregroundColor(scrum.theme.accentColor)
+        .foregroundColor(scrum.theme.accentColor) //to make the text legible in dark mode as set in accentColor in Theme
     }
 }
 
